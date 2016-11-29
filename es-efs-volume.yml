@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: ElasticsearchEFSVol
+spec:
+  capacity:
+    storage: 50Gi
+  accessModes:
+    - ReadWriteMany
+  nfs:
+    server: us-west-2a.fs-cb67a062.efs.us-west-2.amazonaws.com
+    path: "/"
