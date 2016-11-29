@@ -14,6 +14,7 @@ Given this, I'm hereby making possible for you to scale as needed. For instance,
 You can change this yourself in the deployment descriptors available in this repository.
 
 * As of the moment, Kubernetes pod descriptors use an `emptyDir` for storing data in each data node container. This is meant to be for the sake of simplicity and should be adapted according to your storage needs.
+* There is a branch called EFS for connecting an Amazon Elastic File System (NFSv4) PersistantVolume to this pod. Taken from [ngineered blog](https://ngineered.co.uk/blog/using-amazon-efs-to-persist-and-share-between-conatiners-data-in-kubernetes)
 
 ## Pre-requisites
 
